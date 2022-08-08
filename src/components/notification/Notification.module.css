@@ -7,7 +7,7 @@
 .buttom-right {
   bottom: 1rem;
   right: 1rem;
-  animation: toast-in-right .7s;
+  animation: notification-in-right .7s;
 }
 
 .notification {
@@ -20,15 +20,15 @@
 }
 
 .notification:hover {
+  border: 1px solid black;
   box-shadow: 0 0 12px #fff;
   opacity: 1;
 }
 
-.toast {
-  height: 50px;
+.notification {
   width: 365px;
   color: #fff;
-  padding: 20px 15px 10px 10px;
+  padding: 20px 15px 5px 15px;
 }
 
 .container button {
@@ -36,26 +36,20 @@
   background: none;
   border: none;
   color: #fff;
-  opacity: 0.8;
   cursor: pointer;
 }
 
-.title {
-  font-weight: 700;
+.description {
+  font-weight: 00;
   font-size: 16px;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 6px;
+  margin-top: 0;  
   width: 300px;
-  height: 18px;
 }
 
-.description {
-  margin: 0;
-  text-align: left;
-}
 
-@keyframes toast-in-right {
+
+@keyframes notification-in-right {
   from {
     transform: translateX(100%);
   }
